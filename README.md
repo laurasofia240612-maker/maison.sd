@@ -9,10 +9,10 @@ Spa de uñas, cejas y pestañas.
 ## Dueños de cada archivo
 | Archivo | Responsable |
 |---|---|
-| index.html | Sofi |
-| unas.html | Sofi |
+| index.html | Dani |
+| unas.html | Dani |
 | cejas-pestanas.html | Sofi |
-| galeria.html | Sofi |
+| galeria.html | Dani |
 | precios.html | Sofi |
 | agendar.html | Sofi |
 | css/kit.css | Sofi |
