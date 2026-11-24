@@ -17,7 +17,7 @@ Spa de uñas, cejas y pestañas.
 | agendar.html | Sofi |
 | css/kit.css | Sofi |
 | css/estilos.css | Dani |
-| js/app.js | Nombre 3 |
+| js/app.js | Sofi |
 | img/ | Daniela |
 
 ## Pendientes
