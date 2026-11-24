@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agenda tu cita en Maison S&D: uñas, cejas y pestañas. Elige tu servicio, fecha y hora.">
+  <title>Agendar cita | Maison S&D</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/kit.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="logo">Maison <strong>S<span>&amp;</span>D</strong></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="unas.html">Uñas</a></li>
+          <li><a href="cejas-pestanas.html">Cejas y pestañas</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="precios.html">Precios</a></li>
+          <li><a href="agendar.html" class="activo">Agendar cita</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner-pagina">
+      <div class="contenedor">
+        <h1>Agendar cita</h1>
+        <p>Llena el formulario y te confirmamos tu cita por WhatsApp.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor">
+
+        <div id="resumen" class="resumen" hidden aria-live="polite">
+          <h2>¡Solicitud recibida!</h2>
+          <p id="mensaje-final"></p>
+          <dl id="detalle"></dl>
+        </div>
+
+        <form id="formAgenda" class="formulario" novalidate>
+
+          <fieldset>
+            <legend>Tus datos</legend>
+
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej: María Fernanda López"
+                     required minlength="3" maxlength="60"
+                     pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü ]+" autocomplete="name">
+              <small class="error" id="error-nombre"></small>
+            </div>
+
+            <div class="campo">
+              <label for="telefono">Teléfono o WhatsApp</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="3001234567"
+                     required pattern="[0-9]{10}" maxlength="10" inputmode="numeric" autocomplete="tel">
+              <small class="error" id="error-telefono"></small>
+            </div>
+
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com"
+                     required autocomplete="email">
+              <small class="error" id="error-correo"></small>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Tu cita</legend>
+
+            <div class="campo">
+              <label for="servicio">Servicio</label>
+              <select id="servicio" name="servicio" required>
+                <option value="">Selecciona un servicio</option>
+                <optgroup label="Uñas">
+                  <option>Uñas acrílicas</option>
+                  <option>Semipermanente</option>
+                  <option>Gel</option>
+                  <option>Press-on</option>
+                  <option>Nail art</option>
+                  <option>Manicure spa</option>
+                </optgroup>
+                <optgroup label="Cejas">
+                  <option>Diseño de cejas</option>
+                  <option>Diseño con henna</option>
+                  <option>Laminado de cejas</option>
+                </optgroup>
+                <optgroup label="Pestañas">
+                  <option>Lifting de pestañas</option>
+                  <option>Extensiones pelo a pelo</option>
+                  <option>Extensiones volumen</option>
+                  <option>Retoque de pestañas</option>
+                </optgroup>
+                <optgroup label="Combos">
+                  <option>Combo Manos y mirada</option>
+                  <option>Combo Glam</option>
+                  <option>Combo Día de spa completo</option>
+                </optgroup>
+              </select>
+              <small class="error" id="error-servicio"></small>
+            </div>
+
+            <div class="campo">
+              <label for="fecha">Fecha (lunes a sábado)</label>
+              <input type="date" id="fecha" name="fecha" required>
+              <small class="error" id="error-fecha"></small>
+            </div>
+
+            <div class="campo">
+              <label for="hora">Hora preferida</label>
+              <select id="hora" name="hora" required>
+                <option value="">Selecciona una hora</option>
+                <option>9:00 a.m.</option>
+                <option>10:00 a.m.</option>
+                <option>11:00 a.m.</option>
+                <option>12:00 m.</option>
+                <option>2:00 p.m.</option>
+                <option>3:00 p.m.</option>
+                <option>4:00 p.m.</option>
+                <option>5:00 p.m.</option>
+              </select>
+              <small class="error"
